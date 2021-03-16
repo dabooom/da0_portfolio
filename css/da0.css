@@ -1,0 +1,114 @@
+*{margin: 0; padding: 0;}
+body{background-color: #ffffff;}
+body, ul, li, div, section, dl, dt, dd, ol, p, h1, h2, h3, h4, h5, h6, header, footer{
+  margin: 0; padding: 0;
+  font-family: 'NotoSansKR-Light';
+  font-size: 16px;
+  color: #333;
+  line-height: 2;
+  letter-spacing: -1px;
+}
+
+a{text-decoration: none; color:#222;}
+a:hover,
+a:focus {
+  color:#222;
+  text-decoration: none;
+}
+ul, li, ol, dl, dt, dd{list-style: none;}
+img{ border: none;}
+
+/* 다영 모바일 TOP */
+
+.da0mobile{margin: 10px; background: #f5f5f5; color:#222; border-radius: 15px; padding: 10 20px; text-align: center; overflow: hidden;}
+.da0mobile .contents img{margin: 20px 20px 0; width: 80%}
+.da0mobile .contents .da0_txt{margin: 20px 20px 0; text-align: left;}
+.da0mobile .contents .hashtag{ text-align: center; font-family: 'NotoSansKR-bold'; font-size: 20px; margin-top: 20px;}
+.da0mobile .contents .da0_link img{width: 60px; margin:30px 30px 20px 0;}
+.da0mobile .contents .da0_link a:last-child img{margin-right: 0}
+
+@media(max-width:1024px){
+  #grid .da0{display: none;}
+}
+
+/* 다영 포트폴리오 */
+
+#grid {margin: 10px; }
+#grid h1{font-family: 'NotoSansKR-Bold'; font-size: 22px; margin-bottom: 10px; }
+#grid h1 span{background:linear-gradient(to top, yellow 70%,transparent 50%)}
+#grid h1 img{margin-right: 10px;}
+
+
+#grid .grid-item {width: calc(25% - 10px);
+                  width : -webkit-calc(25% - 10px); /* for Chrome, Safari */
+                  width : -moz-calc(25% - 10px); /* for Firefox */
+                  margin-bottom: 10px; background: #f5f5f5; color: #222; border-radius: 15px; padding: 10px 20px; overflow: hidden;}
+
+                  @media all and (min-width:320px) {
+                      #grid .grid-item{
+                        width:100%;
+                      }
+                      #grid .grid-item .contents>img{
+                        width: 100%;
+                      }
+                      #grid .grid-item .contents>iframe{
+                        width: 100%;}
+                      #grid h1{
+                        font-size: 20px !important;
+                      }
+                    }
+
+                    @media all and (min-width:768px) {
+                      #grid .grid-item{
+                        width:calc(50% - 10px);
+                      }
+                      #grid .grid-item .contents>img{
+                        width: 100%;
+                      }
+
+                    }
+
+                    @media all and (min-width:1024px) {
+
+                      .da0mobile{
+                        position: absolute; top:-2000px !important;
+                      }
+                      #grid .grid-item{
+                        width:calc(33.3% - 10px);
+                      }
+
+                    }
+
+                    @media all and (min-width:1600px) {
+                      #grid .grid-item{
+                        width:calc(25% - 10px);
+                      }
+                    }
+
+#grid .grid-item .contents .hashtag{font-family: 'NotoSansKR-bold'; }
+#grid .grid-item .contents .hashtag>span{margin-right: 12px;}
+
+#grid .grid-item .contents>img{width: 100%; margin-bottom: 10px;}
+#grid .grid-item .contents>iframe{width: 100%; margin-bottom: 10px;}
+
+#grid .grid-item:hover, .da0mobile:hover{cursor: url(/da0_port/img/click.png), auto}
+#grid .grid-item:hover .caption { bottom: 0px; }
+
+
+
+#grid .grid-item .caption{ position: absolute; left:0; width: 100%; border-radius: 15px; height: 100%; bottom: -100%; transition: all 0.5s; background: rgba(2,2,2,0.9)}
+#grid .grid-item .caption .btn{ position: absolute; left:20px; bottom:20px;}
+#grid .grid-item .caption .btn .btn1, #grid .grid-item .caption .btn .btn2{ display: inline-block; background:white; border-radius: 21px; padding: 5px; margin-right: 20px;}
+#grid .grid-item .caption .btn1 a, #grid .grid-item .caption .btn2 a{ margin:0 10px; font-family: 'NotoSansKR-bold';}
+#grid .grid-item .caption .btn1 i, #grid .grid-item .caption .btn2 i{ margin-right: 10px;}
+
+#grid .da0 .contents img{margin-top: 20px;}
+#grid .da0 .contents .da0_txt{margin-top: 20px;}
+#grid .da0 .contents .hashtag{ text-align: center; font-family: 'NotoSansKR-bold'; font-size: 20px; margin-top: 20px;}
+#grid .da0 .contents .da0_link img{width: 60px; margin:30px 30px 20px 0;}
+#grid .da0 .contents .da0_link a:last-child img{margin-right: 0}
+
+#grid .cafe24>iframe{ position: relative; z-index: 10; width: 100%;}
+
+#gird .etc .etc_sub{font-family: 'NotoSansKR-Medium'; font-size: 14px;}
+rrw
